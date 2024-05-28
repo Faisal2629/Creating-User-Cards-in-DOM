@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Cards</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .user-card {
+            border: 1px solid #ccc;
+            padding: 1rem;
+            border-radius: 5px;
+            width: 200px;
+            background-color: #f9f9f9;
+        }
+        .form-container {
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Add User</h2>
+        <form id="user-form">
+            <div>
+                <label for="name">Name:</label> &nbsp;&nbsp; &nbsp; &nbsp;
+                <input type="text" id="name" required>
+            </div>
+            <div>
+                <label for="username">Username:</label> 
+                <input type="text" id="username" required>
+            </div>
+            <div>
+                <label for="email">Email:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="email" id="email" required>
+            </div><br>
+            <button type="submit">Add User</button>
+        </form>
+    </div>
+    <div class="container" id="user-cards-container"></div> 
+    <script src="script.js"></script>
+</body>
+</html>
